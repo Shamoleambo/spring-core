@@ -1,4 +1,4 @@
-package com.tdgcode.springcoredemo;
+package com.tdgcode.springcoredemo.common;
 
 public interface Coach {
 
