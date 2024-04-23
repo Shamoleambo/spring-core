@@ -1,4 +1,4 @@
-package com.tdgcode.util;
+package com.tdgcode.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
