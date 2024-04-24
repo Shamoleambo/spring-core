@@ -11,12 +11,10 @@ import com.tdgcode.springcoredemo.common.Coach;
 public class DemoController {
 
 	private Coach myCoach;
-	private Coach anotherCoach;
 
 	@Autowired
-	public DemoController(@Qualifier("cricketCoach") Coach theCoach, @Qualifier("cricketCoach") Coach theAnotherCoach) {
+	public DemoController(@Qualifier("cricketCoach") Coach theCoach) {
 		this.myCoach = theCoach;
-		this.anotherCoach = theAnotherCoach;
 	}
 
 	@GetMapping("/dailyworkout")
@@ -24,8 +22,4 @@ public class DemoController {
 		return this.myCoach.getDailyWorkout();
 	}
 
-	@GetMapping("/check")
-	public String check() {
-		return "Comparing beans: myCoach == anotherCoach, " + (this.myCoach == this.anotherCoach);
-	}
 }
