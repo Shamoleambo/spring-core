@@ -10,9 +10,9 @@ import com.tdgcode.springcoredemo.common.Coach;
 public class DemoController {
 
 	private Coach myCoach;
-
+	
 	@Autowired
-	public DemoController(Coach theCoach) {
+	public void setCoach(Coach theCoach) {
 		this.myCoach = theCoach;
 	}
 
